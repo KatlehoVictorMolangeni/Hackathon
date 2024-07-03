@@ -1,0 +1,282 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background-color: #7a7979;
+    
+    }
+    
+    .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+    
+    .menu-icon{
+        width: 30px;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+    
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    /* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+
+/* Hero section styling */
+.row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    
+
+}
+
+.row .col {
+    max-width: 600px;
+    flex-basis: 50%;
+}
+
+.row h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+.row p {
+    color: #fff;
+font-size: 11px;
+line-height: 15px;
+}
+
+.row button {
+    width: 180px;
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+button:hover{
+    background: #007acc;
+}
+
+/* Restaurants section styling */
+.restaurants-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+
+
+.restaurants-section h2 {
+    margin-bottom: 40px;
+}
+
+.restaurant {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0,5s;
+}
+.restaurant:hover{
+    transform: translateY(-10px);
+}
+
+.restaurant img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.restaurant h3 {
+    margin: 10px 0;
+}
+
+.restaurant p {
+    color: #555;
+}
+
+/* Rating section styling */
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.star {
+    color: rgb(153, 134, 23);
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+/* Cookie Consent Popup */
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-consent p {
+    margin: 0;
+}
+
+.cookie-consent a {
+    color: #f90;
+    text-decoration: underline;
+}
+
+.cookie-consent button {
+    background-color: #f90;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Sign-Up Form styling */
+.signup-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fffbfb;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form .form-group {
+    margin-bottom: 15px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    background: #969393;
+    font-size: 12px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+.signup-form button:hover{
+    background: #007acc;
+}
+footer{
+    text-align: center;
+}
+
+.footer-container {
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        color: #777;
+      }
+      
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .social-media a {
+        margin: 0 5px;
+      }
+      
+      .social-media img {
+        width: 20px;
+        height: 20px;
+      }
